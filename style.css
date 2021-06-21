@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  overflow-y: scroll;
+}
+
+body {
+  display: grid;
+  grid-template:
+  "header " 90px
+  "main " 1fr;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-area: header;
+  justify-content: start;
+  position: sticky;
+  background-color: #011434;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+}
+
+footer {
+  height: 60px;
+  background-color: #011434;
+}
+
+.centre-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 10px;
+  place-content: center;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.logo img{
+  margin: 45px 0px 0px 20px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 3%;
+}
+
+ .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .logo {
+  position: absolute;
+  width: 20%;
+  top: 2%; 
+  right: 2%; 
+  border-radius: 50%;
+}
+
+.card .lower-card-section {
+  margin-top: 2%;
+  padding: 5%;
+}
+
+.card .media-icons{ 
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  column-gap: 0.4rem;
+}
+
+.u-logo {
+  margin: 10px 0 0 10px;
+}
